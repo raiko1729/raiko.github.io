@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/setting.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/setting.js" defer></script>
+</head>
+<body>
+    <!-- 設定アイコン -->
+    <button id="settings-icon">⚙️</button>
+
+    <!-- モーダル（最初は非表示） -->
+    <div id="settings-modal" class="hidden">
+        <div class="modal-content">
+            <h2>お手本（コピーして貼る）</h2>
+            <textarea id="original"></textarea>
+            <button id="close-settings">close</button>
+        </div>
+        
+    </div>
+
+    <div id="typing-area">
+        <div>
+            <h2>お手本</h2>
+            <div id="text-display"></div>
+        </div>
+    
+        <div>
+            <h2>タイピング練習</h2>
+            <textarea id="input"></textarea>
+            <div id="result-area">
+                <div>
+                    <p>文字数：<span id="char-count">0</span> / <span id="total-count">0</span> 文字</p>
+                    <p>タイマー: <span id="timer">0.0</span> 秒</p>
+                    <p>スピード: <span id="speed">0</span> 文字/分</p>                    
+                </div>
+
+                <button id="reset-button">reset</button>          
+            </div>
+        </div>
+    </div>
+</body>
+</html>
